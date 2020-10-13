@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".Nota">
 
+    <Button
+        android:id="@+id/btnNota_Nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir nota"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <EditText
+        android:id="@+id/edtxtNota_Nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Introduzca nota"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="227dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
