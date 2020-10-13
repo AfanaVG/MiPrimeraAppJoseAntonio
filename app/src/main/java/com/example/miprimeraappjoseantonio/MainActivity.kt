@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Boton que nos llevara a nuestra activity Nota
-        btnNota.setOnClickListener(){
-            val intent = Intent(this, Nota::class.java)
+        //Boton que nos llevara a nuestra activity Correo
+        btnCorreo.setOnClickListener(){
+            val intent = Intent(this, Correo::class.java)
             startActivity(intent)
         }
     }
