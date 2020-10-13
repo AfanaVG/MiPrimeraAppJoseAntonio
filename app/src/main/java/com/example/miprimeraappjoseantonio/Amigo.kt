@@ -34,7 +34,7 @@ class Amigo : AppCompatActivity() {
                 startActivity(intent)
             }
         }else{
-            Toast.makeText(this,"El email no es valido",Toast.LENGTH_SHORT)
+            Toast.makeText(this,"El email no es valido",Toast.LENGTH_SHORT).show()
         }
     }
 
