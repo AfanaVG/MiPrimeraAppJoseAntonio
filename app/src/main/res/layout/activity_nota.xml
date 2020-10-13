@@ -20,13 +20,14 @@
         android:id="@+id/edtxtNota_Nota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Introduzca nota"
+        android:hint="Introduce una nota"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/btnNota_Nota"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
