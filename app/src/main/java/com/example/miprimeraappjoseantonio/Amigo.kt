@@ -4,7 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
+import android.util.Patterns
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_amigo.*
+import java.util.regex.Pattern
 
 class Amigo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,15 +23,24 @@ class Amigo : AppCompatActivity() {
     }
 
     fun registrarContacto(nombre: String, correo: String,telefono:String) {
-        val intent = Intent(Intent.ACTION_INSERT).apply {
-            type = ContactsContract.Contacts.CONTENT_TYPE
-            putExtra(ContactsContract.Intents.Insert.NAME, nombre)
-            putExtra(ContactsContract.Intents.Insert.EMAIL, correo)
-            putExtra(ContactsContract.Intents.Insert.PHONE, telefono)
+        if (validarEmail(correo)) {
+            val intent = Intent(Intent.ACTION_INSERT).apply {
+                type = ContactsContract.Contacts.CONTENT_TYPE
+                putExtra(ContactsContract.Intents.Insert.NAME, nombre)
+                putExtra(ContactsContract.Intents.Insert.EMAIL, correo)
+                putExtra(ContactsContract.Intents.Insert.PHONE, telefono)
+            }
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+            }
+        }else{
+            Toast.makeText(this,"El email no es valido",Toast.LENGTH_SHORT)
         }
-        if (intent.resolveActivity(packageManager) != null) {
-            startActivity(intent)
-        }
+    }
+
+    private fun validarEmail(correo:String): Boolean {
+        var pattern: Pattern = Patterns.EMAIL_ADDRESS
+        return pattern.matcher(correo).matches();
     }
 
 
