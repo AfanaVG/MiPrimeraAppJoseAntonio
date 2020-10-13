@@ -6,13 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btnCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="10dp"
+        android:text="Mandar Correo"
+        app:layout_constraintBottom_toTopOf="@+id/btnAmigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNota" />
+
+    <Button
+        android:id="@+id/btnNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="10dp"
+        android:text="Añadir nota"
+        app:layout_constraintBottom_toTopOf="@+id/btnCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAcercaDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="10dp"
+        android:text="Acerca de"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCita" />
+
+    <Button
+        android:id="@+id/btnCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="10dp"
+        android:text="Añadir cita"
+        app:layout_constraintBottom_toTopOf="@+id/btnAcercaDe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmigo" />
+
+    <Button
+        android:id="@+id/btnAmigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="10dp"
+        android:text="Añadir amigo"
+        app:layout_constraintBottom_toTopOf="@+id/btnCita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCorreo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
