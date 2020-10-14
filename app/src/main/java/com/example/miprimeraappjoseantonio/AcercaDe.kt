@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_acerca_de.*
 
 class AcercaDe : AppCompatActivity() {
 
+    //Guardamos los enlaces en variables para pasarlos por funcion
     var twitter = "https://twitter.com/Afanatwit"
     var gitHub = "https://github.com/AfanaVG"
 

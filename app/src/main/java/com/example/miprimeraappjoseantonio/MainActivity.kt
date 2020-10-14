@@ -9,11 +9,16 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //Este sleep no es necesario, es solo para comprobar que nuestra splashScreen funciona
         Thread.sleep(1000)
+        //Inicia la vista de nuestro Main cuando termine de iniciarse la aplicacion
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /**
+         * Botones que iniciaran nuestras distintas activities
+         */
         btnNota.setOnClickListener(){
 
             val intent = Intent(this,Nota::class.java)

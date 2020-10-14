@@ -18,7 +18,6 @@ class Nota : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nota)
 
-        //Nuestro boton llamara al metodo introducirNota()
         btnNota_Nota.setOnClickListener(){
             nuevaNota()
         }

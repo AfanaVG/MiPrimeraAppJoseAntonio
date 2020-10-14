@@ -18,7 +18,9 @@ class Correo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_correo)
 
+        //Boton que recoge las variable de los cuadros de texto y las manda almetodo enviarCorreo
         btnEnviar_Correo.setOnClickListener(){
+            //Por como recoge el Intent.EXTRA_TEXT la informacion es necesario declarar la variable correo como un array
             var correo = arrayOf(edtxtPara_Correo.text.toString())
             var asunto = edtxtAsunto_Correo.text.toString()
             var contenido = edtxtContenido_Correo.text.toString()
@@ -26,6 +28,8 @@ class Correo : AppCompatActivity() {
         }
     }
 
+    /**
+     *En principio estos metodos deberian guardar el estado de los cuadros de texto, pero por el momento no realizan su funcion
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         edtxtPara_Correo.setText(java.lang.String.valueOf(savedInstanceState.get("CORREO")))
@@ -39,8 +43,11 @@ class Correo : AppCompatActivity() {
         outState.putString("ASUNTO", edtxtAsunto_Correo.text.toString() )
         outState.putString("CONTENIDO", edtxtContenido_Correo.text.toString())
     }
+     *
+     */
 
     private fun enviarCorreo(correo: Array<String>,asunto:String,contenido:String){
+        //Primero comprueba que el formato del email sea correcto
         if (validarEmail(correo[0])) {
             val intent = Intent(Intent.ACTION_SENDTO).apply {
                 data = Uri.parse("mailto:") // only email apps should handle this
@@ -58,7 +65,7 @@ class Correo : AppCompatActivity() {
 
     }
 
-
+    //Metodo que comprueba que el email tenga un formato correcto
     private fun validarEmail(correo:String): Boolean {
         var pattern:Pattern = Patterns.EMAIL_ADDRESS
         return pattern.matcher(correo).matches();
