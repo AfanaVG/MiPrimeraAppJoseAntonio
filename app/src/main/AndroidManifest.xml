@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Amigo"></activity>
         <activity android:name=".AcercaDe"></activity>
+        <activity android:name=".Cita"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

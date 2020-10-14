@@ -21,5 +21,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Amigo::class.java)
             startActivity(intent)
         }
+
+        btnCita.setOnClickListener(){
+            val intent = Intent(this, Cita::class.java)
+            startActivity(intent)
+        }
+
     }
 }
