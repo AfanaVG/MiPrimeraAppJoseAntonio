@@ -2,10 +2,10 @@ package com.example.miprimeraappjoseantonio
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_correo.*
 import java.util.regex.Pattern
 
@@ -24,6 +24,20 @@ class Correo : AppCompatActivity() {
             var contenido = edtxtContenido_Correo.text.toString()
             enviarCorreo(correo,asunto,contenido)
         }
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        edtxtPara_Correo.setText(java.lang.String.valueOf(savedInstanceState.getInt("CORREO")))
+        edtxtAsunto_Correo.setText(java.lang.String.valueOf(savedInstanceState.getInt("ASUNTO")))
+        edtxtContenido_Correo.setText(java.lang.String.valueOf(savedInstanceState.getInt("CONTENIDO")))
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("CORREO", edtxtPara_Correo.text.toString())
+        outState.putString("ASUNTO", edtxtAsunto_Correo.text.toString() )
+        outState.putString("CONTENIDO", edtxtContenido_Correo.text.toString())
     }
 
     private fun enviarCorreo(correo: Array<String>,asunto:String,contenido:String){
