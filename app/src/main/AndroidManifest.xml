@@ -14,7 +14,7 @@
         <activity android:name=".AcercaDe" />
         <activity android:name=".Cita" />
         <activity android:name=".Correo" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
