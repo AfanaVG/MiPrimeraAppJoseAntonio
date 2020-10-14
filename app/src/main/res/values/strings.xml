@@ -1,6 +1,6 @@
 <resources>
-    <string name="f">gerhr</string>
-    <string name="btnNuevaNota_Main">Añadir nota</string>
+    <string name="app_name">MiPrimeraAppJoseAntonio</string>
+    <string name="btnNuevaNota_Main">MiPrimeraAppJoseAntonio</string>
     <string name="btnNuevaCita_Main">Añadir cita</string>
     <string name="btnMandarCorreo_Main">Mandar correo</string>
     <string name="btnNuevoAmigo_Main">Añadir amigo</string>
@@ -17,4 +17,5 @@
     <string name="txtPara">Para:</string>
     <string name="txtContenido">Contenido</string>
     <string name="txtInserteNota">Inserte nota:</string>
+    <string name="btnNota">Nueva nota</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="btnNuevaNota_Main">New note</string>
+    <string name="btnNuevaNota_Main">MyFirtsAppJoseAntonio</string>
     <string name="btnNuevaCita_Main">New date</string>
     <string name="btnMandarCorreo_Main">Send email</string>
     <string name="btnNuevoAmigo_Main">New friend</string>
@@ -17,4 +17,5 @@
     <string name="txtPara">For:</string>
     <string name="txtContenido">Content</string>
     <string name="txtInserteNota">Insert new note:</string>
+    <string name="btnNota">New note</string>
 </resources>
