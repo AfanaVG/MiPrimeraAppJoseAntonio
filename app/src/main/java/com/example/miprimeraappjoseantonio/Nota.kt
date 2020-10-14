@@ -1,11 +1,13 @@
 package com.example.miprimeraappjoseantonio
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.actions.NoteIntents
 import kotlinx.android.synthetic.main.activity_nota.*
-import com.google.android.material.snackbar.Snackbar.make as make1
+
 
 class Nota : AppCompatActivity() {
 
@@ -20,7 +22,7 @@ class Nota : AppCompatActivity() {
 
         //Nuestro boton llamara al metodo introducirNota()
         btnNota_Nota.setOnClickListener(){
-                introducirNota(NOTA_MAXIMA,NOTA_MINIMA)
+                newNote()
             }
 
     }
@@ -34,5 +36,19 @@ class Nota : AppCompatActivity() {
             Toast.makeText(this,"Has introducido la nota "+edtxtNota_Nota.text.toString(), Toast.LENGTH_SHORT).show()
         }
 
+    }
+
+    private fun newNote() {
+        val label = "Title"
+        val main = "This is the body of the note"
+        val intent = Intent()
+        intent.setAction(NoteIntents.ACTION_CREATE_NOTE)
+            .putExtra(NoteIntents.EXTRA_NAME, label)
+            .putExtra(NoteIntents.EXTRA_TEXT, main)
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
+        } else {
+            Toast.makeText(this, "No App Available", Toast.LENGTH_SHORT).show()
+        }
     }
 }
