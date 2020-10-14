@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btnNuevaNota_Main">New note</string>
+    <string name="btnNuevaCita_Main">New date</string>
+    <string name="btnMandarCorreo_Main">Send email</string>
+    <string name="btnNuevoAmigo_Main">New friend</string>
+    <string name="btnAcercaDe_Main">About</string>
+    <string name="txtNombre">Name:</string>
+    <string name="txtTelefono">Phone:</string>
+    <string name="txtCorreo">Mail:</string>
+    <string name="btnAceptar">Ok</string>
+    <string name="txtTittle">Tittle:</string>
+    <string name="txtHoraInicio">Start hour:</string>
+    <string name="txtHoraFinal">final hour:</string>
+    <string name="txtLugar">Place:</string>
+    <string name="txtAsunto">Subject:</string>
+    <string name="txtPara">For:</string>
+    <string name="txtContenido">Content</string>
+    <string name="txtInserteNota">Insert new note:</string>
+</resources>

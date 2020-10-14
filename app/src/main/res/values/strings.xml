@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">MiPrimeraAppJoseAntonio</string>
+    <string name="f">gerhr</string>
+    <string name="btnNuevaNota_Main">Añadir nota</string>
+    <string name="btnNuevaCita_Main">Añadir cita</string>
+    <string name="btnMandarCorreo_Main">Mandar correo</string>
+    <string name="btnNuevoAmigo_Main">Añadir amigo</string>
+    <string name="btnAcercaDe_Main">Acerca de</string>
+    <string name="txtNombre">Nombre:</string>
+    <string name="txtTelefono">Telefono:</string>
+    <string name="txtCorreo">Correo:</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="txtTittle">Titulo:</string>
+    <string name="txtHoraInicio">Hora inicial:</string>
+    <string name="txtHoraFinal">Hora final:</string>
+    <string name="txtLugar">Lugar:</string>
+    <string name="txtAsunto">Asunto:</string>
+    <string name="txtPara">Para:</string>
+    <string name="txtContenido">Contenido</string>
+    <string name="txtInserteNota">Inserte nota:</string>
 </resources>
