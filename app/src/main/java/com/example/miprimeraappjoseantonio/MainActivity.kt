@@ -12,6 +12,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnNota.setOnClickListener(){
+
+            val intent = Intent(this,Nota::class.java)
+            startActivity(intent)
+        }
+
         btnAcercaDe.setOnClickListener(){
 
             val intent = Intent(this,AcercaDe::class.java)
