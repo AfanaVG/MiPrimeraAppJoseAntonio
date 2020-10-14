@@ -11,9 +11,7 @@ import kotlinx.android.synthetic.main.activity_nota.*
 
 class Nota : AppCompatActivity() {
 
-    //Variable que controlan la nota minima y maxima que acepta la aplicación
-    private var NOTA_MAXIMA = 10
-    private var NOTA_MINIMA = 0
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
