@@ -15,5 +15,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,AcercaDe::class.java)
             startActivity(intent)
         }
+
+        //Boton que nos llevara a nuestra activity Amigo
+        btnAmigo.setOnClickListener(){
+            val intent = Intent(this, Amigo::class.java)
+            startActivity(intent)
+        }
     }
 }
