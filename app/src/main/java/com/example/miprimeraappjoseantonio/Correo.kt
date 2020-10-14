@@ -28,9 +28,9 @@ class Correo : AppCompatActivity() {
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        edtxtPara_Correo.setText(java.lang.String.valueOf(savedInstanceState.getInt("CORREO")))
-        edtxtAsunto_Correo.setText(java.lang.String.valueOf(savedInstanceState.getInt("ASUNTO")))
-        edtxtContenido_Correo.setText(java.lang.String.valueOf(savedInstanceState.getInt("CONTENIDO")))
+        edtxtPara_Correo.setText(java.lang.String.valueOf(savedInstanceState.get("CORREO")))
+        edtxtAsunto_Correo.setText(java.lang.String.valueOf(savedInstanceState.get("ASUNTO")))
+        edtxtContenido_Correo.setText(java.lang.String.valueOf(savedInstanceState.get("CONTENIDO")))
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
