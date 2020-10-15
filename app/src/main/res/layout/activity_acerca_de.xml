@@ -24,7 +24,6 @@
         android:layout_height="76dp"
         android:background="#FFFFFF"
         android:foreground="@drawable/twitter"
-        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.209"
